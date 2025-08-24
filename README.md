@@ -23,9 +23,22 @@ This repo contains **step-by-step code examples** used in my GSAP tutorial serie
 ## 📂 Project Structure
 ```bash
 ├── app/                # Next.js App Router
-│   ├── demos/          # Individual GSAP demo components
-│   ├── common/         # Shared components (Box, Section, useReplay hook)
-│   └── page.tsx        # Entry point with demo listing
+│   ├── Components/          # Individual GSAP demo components
+│   │    ├── common/         # Shared components (Box, Section, useReplay hook)
+│   │    │    ├── Box.tsx
+│   │    │    ├── header.tsx
+│   │    │    ├── Section.tsx
+│   │    │    └── useReplay.tsx
+│   │    ├── gsap-core/
+│   │    │    ├── FromDemo.tsx
+│   │    │    ├── FromToDemo.tsx
+│   │    │    ├── index.ts
+│   │    │    ├── RepeatYoyoDemo.tsx
+│   │    │    ├── StaggerDemo.tsx
+│   │    │    ├── TimingDemo.tsx
+│   │    │    ├── ToDemo.tsx
+│   │    └── GSAPCoreShow.tsx        # Entry point with demo listing
+│   └── page.tsx      
 ├── lib/
 │   └── gsapClient.ts   # GSAP client setup
 ├── public/             # Static assets
